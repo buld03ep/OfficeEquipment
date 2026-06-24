@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3E417B7-FBA9-4F58-BBBA-4DE589E7AA05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Beko</RootNamespace>
+    <AssemblyName>Beko</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PreferNativeArm64>true</PreferNativeArm64>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAddComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddComponent.Designer.cs">
+      <DependentUpon>FormAddComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddComputer.Designer.cs">
+      <DependentUpon>FormAddComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddEmployee.Designer.cs">
+      <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddInstallPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddInstallPO.Designer.cs">
+      <DependentUpon>FormAddInstallPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPO.Designer.cs">
+      <DependentUpon>FormAddPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditComponent.Designer.cs">
+      <DependentUpon>FormEditComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditComputer.Designer.cs">
+      <DependentUpon>FormEditComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditEmployee.Designer.cs">
+      <DependentUpon>FormEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditInstallPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditInstallPO.Designer.cs">
+      <DependentUpon>FormEditInstallPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPO.Designer.cs">
+      <DependentUpon>FormEditPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeEquipmentDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficeEquipmentDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddComponent.resx">
+      <DependentUpon>FormAddComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddComputer.resx">
+      <DependentUpon>FormAddComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddEmployee.resx">
+      <DependentUpon>FormAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddInstallPO.resx">
+      <DependentUpon>FormAddInstallPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPO.resx">
+      <DependentUpon>FormAddPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditComponent.resx">
+      <DependentUpon>FormEditComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditComputer.resx">
+      <DependentUpon>FormEditComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditEmployee.resx">
+      <DependentUpon>FormEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditInstallPO.resx">
+      <DependentUpon>FormEditInstallPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPO.resx">
+      <DependentUpon>FormEditPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="OfficeEquipmentDBDataSet.xsc">
+      <DependentUpon>OfficeEquipmentDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OfficeEquipmentDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OfficeEquipmentDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OfficeEquipmentDBDataSet.xss">
+      <DependentUpon>OfficeEquipmentDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\337d30e4e5a076c7033d8fd47382ea082d8690b5c04bc8a5d0e20052bfd85f25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad57c0b555aba0663a9c79242996c55171768a4088edce4c9befbf19cfba13ef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ead9669df206b62cf2966a77b246ab2bca78a24dafa5391025ce6db0359c8b21.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
