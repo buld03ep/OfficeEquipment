@@ -19,3 +19,4 @@ C:\Users\buld03ep\source\repos\Beko\Beko\obj\Debug\Beko.FormEditComponent.resour
 C:\Users\buld03ep\source\repos\Beko\Beko\obj\Debug\Beko.FormEditComputer.resources
 C:\Users\buld03ep\source\repos\Beko\Beko\obj\Debug\Beko.FormEditInstallPO.resources
 C:\Users\buld03ep\source\repos\Beko\Beko\obj\Debug\Beko.FormEditPO.resources
+C:\Users\buld03ep\source\repos\Beko\Beko\obj\Debug\Beko.FilterForm.resources

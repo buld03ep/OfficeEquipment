@@ -89,5 +89,15 @@ namespace Beko.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_2026_06_25_21_19_46 {
+            get {
+                object obj = ResourceManager.GetObject("image_2026-06-25_21-19-46", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

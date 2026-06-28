@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAddComponent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAddComponent.resx">
       <DependentUpon>FormAddComponent.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +204,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ead9669df206b62cf2966a77b246ab2bca78a24dafa5391025ce6db0359c8b21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2026-06-25_21-19-46.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
