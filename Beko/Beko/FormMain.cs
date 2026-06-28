@@ -309,5 +309,11 @@ namespace Beko
 
             textBoxSearch.Clear();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FilterForm form = new FilterForm();
+            form.ShowDialog();
+        }
     }
 }

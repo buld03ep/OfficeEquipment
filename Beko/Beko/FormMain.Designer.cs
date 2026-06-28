@@ -89,6 +89,7 @@
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.officeEquipmentDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.componentsBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -638,7 +639,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(482, 52);
+            this.label2.Location = new System.Drawing.Point(604, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 23);
@@ -648,15 +649,15 @@
             // textBoxSearch
             // 
             this.textBoxSearch.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSearch.Location = new System.Drawing.Point(552, 52);
+            this.textBoxSearch.Location = new System.Drawing.Point(674, 36);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(245, 27);
+            this.textBoxSearch.Size = new System.Drawing.Size(123, 27);
             this.textBoxSearch.TabIndex = 37;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(802, 52);
+            this.button3.Location = new System.Drawing.Point(802, 36);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(33, 27);
@@ -668,7 +669,7 @@
             // buttonReset
             // 
             this.buttonReset.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonReset.Location = new System.Drawing.Point(839, 52);
+            this.buttonReset.Location = new System.Drawing.Point(839, 36);
             this.buttonReset.Margin = new System.Windows.Forms.Padding(2);
             this.buttonReset.Name = "buttonReset";
             this.buttonReset.Size = new System.Drawing.Size(33, 27);
@@ -677,13 +678,26 @@
             this.buttonReset.UseVisualStyleBackColor = true;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(839, 604);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(33, 27);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "📝";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(907, 645);
+            this.ClientSize = new System.Drawing.Size(906, 645);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBoxSearch);
@@ -692,10 +706,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Управление производственным офисом";
+            this.Text = "Система управлкния отделом";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.officeEquipmentDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.componentsBindingSource)).EndInit();
@@ -776,6 +791,7 @@
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonReset;
+        private System.Windows.Forms.Button button4;
     }
 }
 
